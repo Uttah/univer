@@ -7,6 +7,7 @@ def fx1(x):
     return 3*x*x + 16*x + 1
 
 def cas(iter):
+    new_list = []
     x1 = float(input("Введите x1 - "))
     eps = float(input("Введите погрешность - "))
     for i in range(iter):
@@ -17,6 +18,9 @@ def cas(iter):
             break
         x1 = xn
         print("Итерация №{}: x = {}, y = {}".format(i+1, xn, fx(xn)))
+        new_list.append(fx(xn))
+    return new_list
 
 kolvo = int(input("Укажите количество итераций - "))
-cas(kolvo)
+tmp = cas(kolvo)
+print("Минимальное значение функции: {}".format(min(tmp)))
