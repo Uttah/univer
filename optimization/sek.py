@@ -1,13 +1,7 @@
 import math
 
 def fx(x):
-    return 3 * x ** 2 - (7/x)
-
-def fx1(x):
-    return 6 * x - (7/x ** 2)
-
-def fx2(x):
-    return 6 - (7/x ** 3)
+    return x*x*x + 8*x*x + x +5
 
 def sek(iter):
     new_list = []
