@@ -29,8 +29,7 @@ def midle_int(iter):
                 a = x1
                 b = x2
                 midle(a, b)
-        print(x1, " ", x2)
-        print(value_func(x1, x2))
+        print("Итерация №{}: интервал - [{}, {}], значение функции - {}".format(i+1, x1, x2, value_func(x1,x2)))
     return midle(a,b)
 
 kolvo = int(input("Введите количество итераций "))
